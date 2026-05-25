@@ -122,8 +122,6 @@ img {
 .card-gambar{
 background:#8dd0c5;         /* Warna latar belakang card */
 padding: 10px;                /* Jarak isi dengan tepi dalam card */
-margin-left: 600px;           /* Memberi jarak dari sisi kiri halaman */
-margin-right: 600px;          /* Memberi jarak dari sisi kanan halaman */
 margin-bottom: 10px;          /* Memberi jarak bawah antar card */
 text-align: center;           /* Membuat isi teks berada di tengah */
 }
