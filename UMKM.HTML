@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentral Produksi Tempe Kelurahan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+        /* Gaya khusus halaman Sentral Tempe */
+        .tempe-container {
+            max-width: 1000px;           /* Lebar maksimal container adalah 1000px */
+            margin: 40px auto;           /* Memberi jarak atas-bawah 40px dan membuat container otomatis berada di tengah */
+            padding: 0 20px;             /* Jarak dalam:atas-bawah = 0,kiri-kanan = 20px */
+            font-family: sans-serif;     /* Menggunakan jenis huruf sans-serif */
+        }
+        .tempe-header {
+            text-align: center;          /* Membuat semua tulisan berada di tengah */
+            margin-bottom: 40px;         /* Memberi jarak bawah sebesar 40px */
+            background-color: #fcf8f2; /* Warna krem lembut cocok untuk tema pangan */
+            padding: 30px;               /* Memberi jarak isi dengan tepi dalam box */
+            font-size: 15;               /* Ukuran tulisan menjadi 15px */
+            border-radius: 8px;          /* Membuat sudut box menjadi melengkung */
+            border-left: 5px solid #d35400; /* Aksen warna cokelat/oranye tempe */
+        }
+        .tempe-header h1 {
+            color: #d35400;                     
+            margin-bottom: 10px;         /*jarak bawah*/
+        }
+        .tempe-grid {
+            display: grid;                                                    /* Mengubah layout menjadi sistem grid */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));      /* Membuat kolom otomatis responsive:Minimal lebar card = 280px,Maksimal mengikuti ruang layar,auto-fit = jumlah kolom menyesuaikan ukuran layar */
+            gap: 25px;                                                        /* Memberi jarak antar card/grid sebesar 25px */
+        }
+        .tempe-card {
+            background:#e8f5e9;                          /* Warna background hijau muda agar terlihat segar */
+            border: 1px solid #e0e0e0;                   /* Garis tipis abu-abu di sekeliling card */
+            border-radius: 8px;                            /* Membuat sudut card menjadi melengkung */
+            padding: 20px;                                 /* Memberi jarak isi card dengan tepi dalam */
+            text-align: center;                            /* Membuat isi card berada di tengah */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);      /* Memberikan bayangan halus agar card terlihat modern */
+            transition: transform 0.2s;                    /* Efek animasi halus saat card bergerak */
+        }
+        .tempe-card:hover {
+            transform: translateY(-5px);                   /* Saat disentuh mouse, card naik ke atas 5px */
+        }
+        .badge-produk {
+            background-color: #e67e22;        /* Warna latar belakang badge oranye */
+            color: white;                     /* Warna tulisan menjadi putih */
+            padding: 5px 10px;                  /* Jarak isi badge:atas-bawah = 5px,kiri-kanan = 10px */
+            font-size: 12px;                    /* Ukuran tulisan badge */
+            border-radius: 20px;                /* Membuat sudut badge sangat melengkung seperti kapsul */
+            display: inline-block;              /* Ukuran badge mengikuti panjang teks */
+            margin-bottom: 10px;                /* Memberi jarak bawah dengan elemen di bawahnya */
+        }
+        .tempe-card h3 {
+            color: #2c3e50;                  /* Warna judul biru gelap agar terlihat elegan */
+            margin: 5px 0 5px 0;                /* Jarak luar:atas = 5px,kanan = 0,bawah = 5px,kiri = 0 */
+
+            font-size: 30px;
+        }
+        .tempe-card p {
+            color: #666;                    /* Warna teks abu-abu agar terlihat lembut dan nyaman dibaca */
+            font-size: 20px;                  /* Ukuran tulisan paragraf menjadi 20px */
+            line-height: 1.5;                 /* Mengatur jarak antar baris agar tulisan lebih rapi */
+            margin-bottom: 20px;              /* Memberi jarak bawah antar paragraf atau elemen berikutnya */
+            height: 10px;                     /* Menyamakan tinggi kotak deskripsi */
+        }
+        .btn-pesan {
+            display: block;                  /* Tombol menjadi elemen block sehingga memenuhi satu baris */
+            background-color: #25D366;     /* Warna hijau khas WhatsApp */
+            color: white;                  /* Warna tulisan tombol menjadi putih */            
+            padding: 12px;                   /* Memberi jarak isi tombol dengan tepi dalam */
+            text-decoration: none;           /* Menghilangkan garis bawah pada link */
+            font-weight: bold;               /* Membuat tulisan menjadi tebal */
+            border-radius: 5px;              /* Membuat sudut tombol sedikit melengkung */
+            font-size: 14px;                 /* Ukuran tulisan tombol */
+        }
+        .btn-pesan:hover {
+            background-color: #1ebd58;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="tempe-container">
+        
+        <div class="tempe-header">
+            <h1>🌱 Sentral Tempe Kajen</h1>
+            <p>Pusat produksi sentral tempe yang berkualitas,lezat betul.</p>
+        </div>
+
+        <div class="tempe-grid">
+            
+            <div class="tempe-card">
+                <span class="badge-produk">Tempe Daun Pisang Alami</span>
+                <h3>Tempe Ibu Lestari</h3>
+                <p>Memproduksi tempe bungkus daun pisang asli tanpa bahan pengawet.</p>
+                <P>Aroma khas dan rasa lebih gurih.</P>
+                <img src="Gambar/Poster promosi_muchsin_16.png" width=40%>
+                <img src="Gambar/produksi_tempe_bu_lestari_1.png" width=23%>
+                <img src="Gambar/produksi_tempe_bu_lestari_2.png" width=23%>
+            </div>
+           
+        </div>
+    </div>
+
+ <!-- Tombol Back to Home -->
+    <div class="back-home">
+        <a href="index.html" class="btn-home">← Back to Home</a>
+    </div>    
+
+</body>
+</html>

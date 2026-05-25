@@ -1,0 +1,155 @@
+body {
+    /* 1. Memasang foto sebagai background */
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('Gambar/gotongroyong.png');
+    
+    /* 2.fitur */
+    background-size: cover;        /* Menyesuaikan ukuran foto agar memenuhi seluruh layar komputer/HP */
+    background-position: center;   /* Memastikan posisi tengah foto selalu terlihat */
+    background-repeat: no-repeat;  /* Mencegah foto terulang-ulang (berlipat) jika halaman di-scroll */
+    background-attachment: fixed;  /* Efek keren: foto tetap diam di tempat saat halaman di-scroll */
+    
+    font-family: Arial;
+}
+
+body h1 {
+    font-size: 50pt;             /* Ukuran tulisan heading h1 */
+    text-align: center;          /* Posisi teks di tengah */
+    color: white;              /* Warna teks putih */
+    margin-bottom: -20px;        /* Jarak bawah, negatif agar lebih rapat */
+}
+
+body p {
+    font-size: 30;               /* Ukuran teks paragraf */
+    text-align: center;          /* Paragraf rata tengah */
+}
+
+.gambar {
+    text-align: center;          /* Isi class gambar berada di tengah */
+    padding: 20px;               /* Jarak dalam elemen */ 
+}
+
+nav {
+background: rgba(0, 255, 200, 0.76);         /* Warna background transparan */
+padding: 15px;                                 /* Jarak dalam menu navigasi */
+}
+
+
+nav a {
+color: white;                  /* Warna teks link putih */
+margin: 10px;                    /* Jarak antar link */
+}
+.card {
+background:#8dd0c5;            /* Warna background card */       
+padding: 10px;                   /* Jarak dalam card */
+margin-left: 500px;              /* Jarak kiri */
+margin-right: 500px;             /* Jarak kanan */
+margin-bottom: 20px;             /* Jarak bawah */
+text-align: center;              /* Isi card rata tengah */
+}
+.btn {
+background: rgba(0, 128, 79, 0.849);        /* Warna tombol */
+color: white;                               /* Warna teks tombol */
+padding: 10px;                                /* Jarak dalam tombol */
+}
+
+.profil-card {
+    text-align: center;         /* Membuat semua isi di dalam card berada di tengah */
+    color:white               /* Warna tulisan menjadi putih */
+}
+img {
+    align-self: center;
+}
+/* =========================
+   GAMBAR
+========================= */
+.banner-box {
+    display: flex;
+    justify-content: center;  /* Membuat gambar otomatis ke tengah secara horizontal */
+    align-items: center;
+    margin: auto;
+    width: 100%;             /* Memenuhi lebar halaman */
+    margin: 20px 0;          /* Memberi sedikit jarak atas dan bawah agar tidak menempel */
+}
+
+.banner-box img {
+    border-radius: 8px;      /* (Opsional) Membuat sudut gambar agak melengkung agar estetik */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* (Opsional) Memberikan bayangan halus */
+}
+.pengantar-surat{
+    color: wheat;
+}
+/* =========================
+   JUDUL
+========================= */
+.hero-text{
+    color: white;            /* Warna tulisan menjadi putih */
+    margin: 20px;              /* Memberi jarak luar di semua sisi */
+    margin-top: 40px;          /* Memberi jarak bagian atas sebesar 40px */
+    padding: 20px;             /* Memberi jarak isi dengan tepi dalam elemen */
+}
+.judul{
+    margin-top: -5px;         /*jarak atas tulisan kelurahan kajen ceper*/
+}
+.posisi{
+    margin-top: -5px;        /*jarak atas tulisan kegiatan desa*/
+}
+
+.k {
+    color: white;
+    margin-bottom: 15px;     /*jarak batas bawah*/
+}
+
+.k p {
+    margin-bottom: 10px;     /*jarak batas bawah*/
+}
+/* =========================
+   IKUT DI JUDUL
+========================= */
+.teks-berjalan {
+    color: #ffffff;            /* Warna tulisan putih terang agar kontras dan jelas dibaca */
+    padding: 10px 0;           /* Memberikan ruang vertikal agar kotak teks tidak terlalu tipis */
+    font-family: Arial, sans-serif;
+    font-weight: bold;         /* Membuat huruf menjadi tebal */
+    font-size: 20px;           /* Ukuran huruf yang pas, tidak kekecilan */
+    letter-spacing: 1px;       /* Memberi sedikit jarak antar huruf agar rapi */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Bayangan halus di bawah kotak tulisan berjalan */
+}
+/* =========================
+   KEGIATAN
+========================= */
+.card-gambar{
+background:#8dd0c5;         /* Warna latar belakang card */
+padding: 10px;                /* Jarak isi dengan tepi dalam card */
+margin-left: 600px;           /* Memberi jarak dari sisi kiri halaman */
+margin-right: 600px;          /* Memberi jarak dari sisi kanan halaman */
+margin-bottom: 10px;          /* Memberi jarak bawah antar card */
+text-align: center;           /* Membuat isi teks berada di tengah */
+}
+.kegiatan{
+    display: flex;            /* Membuat isi di dalam class kegiatan tersusun sejajar */
+    flex-wrap: wrap;           /* Jika layar penuh, item otomatis turun ke bawah */
+}
+/* =========================
+   BACK TO HOME BUTTON
+========================= */
+.back-home {
+    margin: 20px;
+}
+
+.btn-home {
+    background: rgba(0, 128, 79, 0.9);           /* Warna background tombol hijau transparan */
+    color: white;                                /* Warna tulisan tombol menjadi putih */
+    text-decoration: none;                         /* Menghilangkan garis bawah pada link */
+    padding: 12px 20px;                            /* Jarak isi tombol dengan tepi dalam */
+    border-radius: 10px;                           /* Membuat sudut tombol menjadi melengkung */
+    font-weight: bold;                             /* Membuat tulisan menjadi tebal */
+    transition: 0.3s;                              /* Efek animasi halus saat hover */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);      /* Memberi bayangan agar tombol terlihat lebih modern */
+}
+
+.btn-home:hover {
+    background: rgb(0, 100, 60);                 /* Warna tombol berubah saat disentuh mouse */
+    transform: scale(1.05);                         /* Tombol sedikit membesar saat hover */
+}
