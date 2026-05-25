@@ -43,9 +43,9 @@ margin: 10px;                    /* Jarak antar link */
 .card {
 background:#8dd0c5;            /* Warna background card */       
 padding: 10px;                   /* Jarak dalam card */
-margin-left: 500px;              /* Jarak kiri */
-margin-right: 500px;             /* Jarak kanan */
 margin-bottom: 20px;             /* Jarak bawah */
+display: flex;                   /* biar flexibel */
+flex-wrap: wrap;
 text-align: center;              /* Isi card rata tengah */
 }
 .btn {
