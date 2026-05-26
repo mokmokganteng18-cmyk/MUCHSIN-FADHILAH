@@ -124,6 +124,7 @@ img {
 /* 1. Warna Latar Belakang Kotak Visi (Gradasi) */
 .kotak-visi {
     background: linear-gradient(0deg, #0d9488 0%, #0f766e 0%); /* Warna Teal Tua */
+      transition: 0.5s;           
 }
 
 /* 2. Warna Tulisan & Background Kecil "Misi Kami" */
