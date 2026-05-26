@@ -180,7 +180,7 @@ text-align: center;           /* Membuat isi teks berada di tengah */
 }
 
 .btn-home {
-    background: rgba(0, 128, 79, 0.9);           /* Warna background tombol hijau transparan */
+    background: rgba(0, 0, 0, 0.0);           /* Warna background tombol hijau transparan */
     color: white;                                /* Warna tulisan tombol menjadi putih */
     text-decoration: none;                         /* Menghilangkan garis bawah pada link */
     padding: 12px 20px;                            /* Jarak isi tombol dengan tepi dalam */
