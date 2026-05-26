@@ -186,7 +186,7 @@ text-align: center;           /* Membuat isi teks berada di tengah */
     padding: 12px 20px;                            /* Jarak isi tombol dengan tepi dalam */
     border-radius: 10px;                           /* Membuat sudut tombol menjadi melengkung */
     font-weight: bold;                             /* Membuat tulisan menjadi tebal */
-    transition: 0.3s;                              /* Efek animasi halus saat hover */
+    transition: 0.0s;                              /* Efek animasi halus saat hover */
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);      /* Memberi bayangan agar tombol terlihat lebih modern */
 }
 
