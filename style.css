@@ -31,7 +31,7 @@ body p {
 }
 
 nav {
-background: rgba(0, 255, 200, 0.76);         /* Warna background transparan */
+background: rgba(0, 255, 200, 0.76);         /* Warna background navigasi */
 padding: 15px;                                 /* Jarak dalam menu navigasi */
 }
 
@@ -108,14 +108,54 @@ img {
    IKUT DI JUDUL
 ========================= */
 .teks-berjalan {
-    color: #ffffff;            /* Warna tulisan putih terang agar kontras dan jelas dibaca */
-    padding: 10px 0;           /* Memberikan ruang vertikal agar kotak teks tidak terlalu tipis */
+    color: #ffffff;                     /* Warna tulisan putih terang agar kontras dan jelas dibaca */
+    padding: 10px 0;                      /* Memberikan ruang vertikal agar kotak teks tidak terlalu tipis */
     font-family: Arial, sans-serif;
-    font-weight: bold;         /* Membuat huruf menjadi tebal */
-    font-size: 20px;           /* Ukuran huruf yang pas, tidak kekecilan */
-    letter-spacing: 1px;       /* Memberi sedikit jarak antar huruf agar rapi */
+    font-weight: bold;                    /* Membuat huruf menjadi tebal */
+    font-size: 20px;                      /* Ukuran huruf yang pas, tidak kekecilan */
+    letter-spacing: 1px;                  /* Memberi sedikit jarak antar huruf agar rapi */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Bayangan halus di bawah kotak tulisan berjalan */
 }
+
+/* ====================================
+   PENGATURAN WARNA VISI & MISI KUSTOM
+   ====================================*/
+
+/* 1. Warna Latar Belakang Kotak Visi (Gradasi) */
+.kotak-visi {
+    background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%); /* Warna Teal Tua */
+}
+
+/* 2. Warna Tulisan & Background Kecil "Misi Kami" */
+.badge-misi {
+    background-color: #ccfbf1; /* Hijau pudar */
+    color: #115e59;            /* Teks hijau tua */
+}
+
+/* 3. Warna Garis Dekorasi di bawah Judul Misi */
+.garis-dekorasi {
+    background-color: #0d9488;
+}
+
+/* 4. Warna Dasar Bulatan Angka Misi (1-7) */
+.angka-misi {
+    background-color: #0d9488; /* Warna utama angka */
+}
+
+/* 5. EFEK HOVER (Saat Kursor Menyentuh Kartu Misi) */
+
+/* Warna kartu misi berubah sedikit saat disorot */
+.kartu-misi:hover {
+    background-color: #f0fdfa !important; /* Warna background tipis saat di-hover */
+    border-color: #ccfbf1 !important;     /* Warna garis tepi saat di-hover */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+/* Warna bulatan angka ikut berubah saat kartu misinya disorot */
+.kartu-misi:hover .angka-misi {
+    background-color: #115e59; /* Angka menjadi lebih gelap saat kartu di-hover */
+}
+
 /* =========================
    KEGIATAN
 ========================= */
@@ -124,7 +164,10 @@ background:#8dd0c5;         /* Warna latar belakang card */
 padding: 10px;                /* Jarak isi dengan tepi dalam card */
 margin-bottom: 10px;          /* Memberi jarak bawah antar card */
 text-align: center;           /* Membuat isi teks berada di tengah */
+
+
 }
+
 .kegiatan{
     display: flex;            /* Membuat isi di dalam class kegiatan tersusun sejajar */
     flex-wrap: wrap;           /* Jika layar penuh, item otomatis turun ke bawah */
